@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <header className="d-flex justify-content-between p-3">
 
-            <h3>Employee Management System</h3>
+            <h3>Employee Management System1</h3>
 
             <div>
 
