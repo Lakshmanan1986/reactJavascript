@@ -1,47 +1,44 @@
-//import {
-//    FaHome,
-//    FaUsers,
-//    FaBuilding,
-//    FaChartBar,
-//    FaCog
-//} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
-
     return (
-
         <div className="sidebar">
 
-            <h2 className="logo">
-                EIMS
-            </h2>
+            {/*<h2 className="logo">*/}
+            {/*    EIMS*/}
+            {/*</h2>*/}
 
             <ul>
-
-                <li className="active">
-                     Dashboard
+                <li>
+                    <Link to="/">Dashboard</Link>
                 </li>
 
                 <li>
-                     Employees
+                    <Link to="/employees">Employees</Link>
                 </li>
 
                 <li>
-                     Departments
+                    <Link to="/departments">Departments</Link>
                 </li>
 
                 <li>
-                    Reports
+                    <Link to="/batches">Batches</Link>
                 </li>
 
                 <li>
-                     Settings
+                    <Link to="/reports">Reports</Link>
+                </li>
+
+                <li>
+                    <Link to="/settings">Settings</Link>
+                </li>
+                <li>
+                    <Link to="/about">About</Link>
                 </li>
 
             </ul>
 
         </div>
-
     );
-
 }
+

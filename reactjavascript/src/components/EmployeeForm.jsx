@@ -71,7 +71,7 @@ function EmployeeForm({ selectedEmployee, refreshEmployees, clearSelection }) {
             <div className="card-header">
 
                 <h4>
-                    {selectedEmployee ? "Edit Employee1" : "Add Employee"}
+                    {selectedEmployee ? "Edit Employee" : "Add Employee"}
                 </h4>
 
             </div>

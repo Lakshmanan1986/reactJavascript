@@ -17,10 +17,3 @@ export const updateEmployee = (id, employee) =>
 export const deleteEmployee = (id) =>
     axios.delete(`${API_URL}/${id}`);
 
-//function employeeService() {
-//  return (
-//    <p>Hello world!</p>
-//  );
-//}
-
-//export default employeeService;

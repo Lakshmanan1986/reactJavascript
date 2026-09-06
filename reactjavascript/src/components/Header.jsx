@@ -1,31 +1,32 @@
-export default function Header() {
+import React from "react";
+import { getUser, logout } from "../services/authService";
+
+const Header = () => {
+
+    const user = getUser();
 
     return (
+        <header className="d-flex justify-content-between p-3">
 
-        <nav className="navbar navbar-expand-lg topbar">
+            <h3>Employee Management System</h3>
 
-            <div className="container-fluid">
+            <div>
 
-                <div className="ms-auto">
+                <span className="me-3">
+                    Welcome, {user?.fullName}
+                </span>
 
-                    <a href="/" className="text-white me-4">
-                        Home
-                    </a>
-
-                    <a href="/" className="text-white me-4">
-                        Employees
-                    </a>
-
-                    <span className="avatar">
-                        A
-                    </span>
-
-                </div>
+                <button
+                    className="btn btn-danger btn-sm"
+                    onClick={logout}
+                >
+                    Logout
+                </button>
 
             </div>
 
-        </nav>
-
+        </header>
     );
+};
 
-}
+export default Header;
